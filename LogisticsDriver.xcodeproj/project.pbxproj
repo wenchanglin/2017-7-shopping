@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13BC57731E349355002BB188 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BC57721E349355002BB188 /* main.m */; };
+		13BC57761E349355002BB188 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BC57751E349355002BB188 /* AppDelegate.m */; };
+		13BC57791E349355002BB188 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BC57781E349355002BB188 /* ViewController.m */; };
+		13BC577C1E349356002BB188 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BC577A1E349356002BB188 /* Main.storyboard */; };
+		13BC577E1E349356002BB188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BC577D1E349356002BB188 /* Assets.xcassets */; };
+		13BC57811E349356002BB188 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BC577F1E349356002BB188 /* LaunchScreen.storyboard */; };
+		13BC578C1E349356002BB188 /* LogisticsDriverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BC578B1E349356002BB188 /* LogisticsDriverTests.m */; };
+		13BC57971E349356002BB188 /* LogisticsDriverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BC57961E349356002BB188 /* LogisticsDriverUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13BC57881E349356002BB188 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13BC57661E349354002BB188 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13BC576D1E349354002BB188;
+			remoteInfo = LogisticsDriver;
+		};
+		13BC57931E349356002BB188 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13BC57661E349354002BB188 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13BC576D1E349354002BB188;
+			remoteInfo = LogisticsDriver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13BC576E1E349355002BB188 /* LogisticsDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogisticsDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BC57721E349355002BB188 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13BC57741E349355002BB188 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13BC57751E349355002BB188 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13BC57771E349355002BB188 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		13BC57781E349355002BB188 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		13BC577B1E349356002BB188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13BC577D1E349356002BB188 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13BC57801E349356002BB188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13BC57821E349356002BB188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13BC57871E349356002BB188 /* LogisticsDriverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogisticsDriverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BC578B1E349356002BB188 /* LogisticsDriverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogisticsDriverTests.m; sourceTree = "<group>"; };
+		13BC578D1E349356002BB188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13BC57921E349356002BB188 /* LogisticsDriverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogisticsDriverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BC57961E349356002BB188 /* LogisticsDriverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogisticsDriverUITests.m; sourceTree = "<group>"; };
+		13BC57981E349356002BB188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13BC576B1E349354002BB188 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BC57841E349356002BB188 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BC578F1E349356002BB188 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13BC57651E349354002BB188 = {
+			isa = PBXGroup;
+			children = (
+				13BC57701E349355002BB188 /* LogisticsDriver */,
+				13BC578A1E349356002BB188 /* LogisticsDriverTests */,
+				13BC57951E349356002BB188 /* LogisticsDriverUITests */,
+				13BC576F1E349355002BB188 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13BC576F1E349355002BB188 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13BC576E1E349355002BB188 /* LogisticsDriver.app */,
+				13BC57871E349356002BB188 /* LogisticsDriverTests.xctest */,
+				13BC57921E349356002BB188 /* LogisticsDriverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13BC57701E349355002BB188 /* LogisticsDriver */ = {
+			isa = PBXGroup;
+			children = (
+				13BC57741E349355002BB188 /* AppDelegate.h */,
+				13BC57751E349355002BB188 /* AppDelegate.m */,
+				13BC57771E349355002BB188 /* ViewController.h */,
+				13BC57781E349355002BB188 /* ViewController.m */,
+				13BC577A1E349356002BB188 /* Main.storyboard */,
+				13BC577D1E349356002BB188 /* Assets.xcassets */,
+				13BC577F1E349356002BB188 /* LaunchScreen.storyboard */,
+				13BC57821E349356002BB188 /* Info.plist */,
+				13BC57711E349355002BB188 /* Supporting Files */,
+			);
+			path = LogisticsDriver;
+			sourceTree = "<group>";
+		};
+		13BC57711E349355002BB188 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13BC57721E349355002BB188 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13BC578A1E349356002BB188 /* LogisticsDriverTests */ = {
+			isa = PBXGroup;
+			children = (
+				13BC578B1E349356002BB188 /* LogisticsDriverTests.m */,
+				13BC578D1E349356002BB188 /* Info.plist */,
+			);
+			path = LogisticsDriverTests;
+			sourceTree = "<group>";
+		};
+		13BC57951E349356002BB188 /* LogisticsDriverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13BC57961E349356002BB188 /* LogisticsDriverUITests.m */,
+				13BC57981E349356002BB188 /* Info.plist */,
+			);
+			path = LogisticsDriverUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13BC576D1E349354002BB188 /* LogisticsDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13BC579B1E349356002BB188 /* Build configuration list for PBXNativeTarget "LogisticsDriver" */;
+			buildPhases = (
+				13BC576A1E349354002BB188 /* Sources */,
+				13BC576B1E349354002BB188 /* Frameworks */,
+				13BC576C1E349354002BB188 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogisticsDriver;
+			productName = LogisticsDriver;
+			productReference = 13BC576E1E349355002BB188 /* LogisticsDriver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13BC57861E349356002BB188 /* LogisticsDriverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13BC579E1E349356002BB188 /* Build configuration list for PBXNativeTarget "LogisticsDriverTests" */;
+			buildPhases = (
+				13BC57831E349356002BB188 /* Sources */,
+				13BC57841E349356002BB188 /* Frameworks */,
+				13BC57851E349356002BB188 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13BC57891E349356002BB188 /* PBXTargetDependency */,
+			);
+			name = LogisticsDriverTests;
+			productName = LogisticsDriverTests;
+			productReference = 13BC57871E349356002BB188 /* LogisticsDriverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13BC57911E349356002BB188 /* LogisticsDriverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13BC57A11E349356002BB188 /* Build configuration list for PBXNativeTarget "LogisticsDriverUITests" */;
+			buildPhases = (
+				13BC578E1E349356002BB188 /* Sources */,
+				13BC578F1E349356002BB188 /* Frameworks */,
+				13BC57901E349356002BB188 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13BC57941E349356002BB188 /* PBXTargetDependency */,
+			);
+			name = LogisticsDriverUITests;
+			productName = LogisticsDriverUITests;
+			productReference = 13BC57921E349356002BB188 /* LogisticsDriverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13BC57661E349354002BB188 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = LongKe;
+				TargetAttributes = {
+					13BC576D1E349354002BB188 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					13BC57861E349356002BB188 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 13BC576D1E349354002BB188;
+					};
+					13BC57911E349356002BB188 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 13BC576D1E349354002BB188;
+					};
+				};
+			};
+			buildConfigurationList = 13BC57691E349354002BB188 /* Build configuration list for PBXProject "LogisticsDriver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13BC57651E349354002BB188;
+			productRefGroup = 13BC576F1E349355002BB188 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13BC576D1E349354002BB188 /* LogisticsDriver */,
+				13BC57861E349356002BB188 /* LogisticsDriverTests */,
+				13BC57911E349356002BB188 /* LogisticsDriverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13BC576C1E349354002BB188 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BC57811E349356002BB188 /* LaunchScreen.storyboard in Resources */,
+				13BC577E1E349356002BB188 /* Assets.xcassets in Resources */,
+				13BC577C1E349356002BB188 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BC57851E349356002BB188 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BC57901E349356002BB188 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13BC576A1E349354002BB188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BC57791E349355002BB188 /* ViewController.m in Sources */,
+				13BC57761E349355002BB188 /* AppDelegate.m in Sources */,
+				13BC57731E349355002BB188 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BC57831E349356002BB188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BC578C1E349356002BB188 /* LogisticsDriverTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BC578E1E349356002BB188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BC57971E349356002BB188 /* LogisticsDriverUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13BC57891E349356002BB188 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13BC576D1E349354002BB188 /* LogisticsDriver */;
+			targetProxy = 13BC57881E349356002BB188 /* PBXContainerItemProxy */;
+		};
+		13BC57941E349356002BB188 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13BC576D1E349354002BB188 /* LogisticsDriver */;
+			targetProxy = 13BC57931E349356002BB188 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13BC577A1E349356002BB188 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13BC577B1E349356002BB188 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13BC577F1E349356002BB188 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13BC57801E349356002BB188 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13BC57991E349356002BB188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		13BC579A1E349356002BB188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13BC579C1E349356002BB188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LogisticsDriver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LongKe.LogisticsDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		13BC579D1E349356002BB188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LogisticsDriver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LongKe.LogisticsDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		13BC579F1E349356002BB188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LogisticsDriverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LongKe.LogisticsDriverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogisticsDriver.app/LogisticsDriver";
+			};
+			name = Debug;
+		};
+		13BC57A01E349356002BB188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LogisticsDriverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LongKe.LogisticsDriverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogisticsDriver.app/LogisticsDriver";
+			};
+			name = Release;
+		};
+		13BC57A21E349356002BB188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LogisticsDriverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LongKe.LogisticsDriverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LogisticsDriver;
+			};
+			name = Debug;
+		};
+		13BC57A31E349356002BB188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LogisticsDriverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LongKe.LogisticsDriverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LogisticsDriver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13BC57691E349354002BB188 /* Build configuration list for PBXProject "LogisticsDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13BC57991E349356002BB188 /* Debug */,
+				13BC579A1E349356002BB188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13BC579B1E349356002BB188 /* Build configuration list for PBXNativeTarget "LogisticsDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13BC579C1E349356002BB188 /* Debug */,
+				13BC579D1E349356002BB188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		13BC579E1E349356002BB188 /* Build configuration list for PBXNativeTarget "LogisticsDriverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13BC579F1E349356002BB188 /* Debug */,
+				13BC57A01E349356002BB188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		13BC57A11E349356002BB188 /* Build configuration list for PBXNativeTarget "LogisticsDriverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13BC57A21E349356002BB188 /* Debug */,
+				13BC57A31E349356002BB188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13BC57661E349354002BB188 /* Project object */;
+}
