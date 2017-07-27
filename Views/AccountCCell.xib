@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AccountCCell">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="76"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBw-ww-npK">
+                        <rect key="frame" x="0.0" y="0.0" width="138" height="76"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UU8-YS-Sxf">
+                                <rect key="frame" x="56" y="38" width="26" height="16"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LFv-3n-J1L">
+                                <rect key="frame" x="60" y="12" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="gjf-5Z-8rA"/>
+                                    <constraint firstAttribute="width" constant="18" id="q5r-Ls-We6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LFv-3n-J1L" firstAttribute="top" secondItem="bBw-ww-npK" secondAttribute="top" constant="12" id="T9g-i1-QWp"/>
+                            <constraint firstItem="UU8-YS-Sxf" firstAttribute="centerX" secondItem="bBw-ww-npK" secondAttribute="centerX" id="Xjc-dg-KaO"/>
+                            <constraint firstItem="LFv-3n-J1L" firstAttribute="centerX" secondItem="bBw-ww-npK" secondAttribute="centerX" id="a0r-RD-aEO"/>
+                            <constraint firstItem="UU8-YS-Sxf" firstAttribute="top" secondItem="LFv-3n-J1L" secondAttribute="bottom" constant="8" id="kd3-EP-Mmj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="bBw-ww-npK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8X7-55-h1O"/>
+                <constraint firstItem="bBw-ww-npK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BgJ-e2-gdR"/>
+                <constraint firstAttribute="trailing" secondItem="bBw-ww-npK" secondAttribute="trailing" id="HR2-2K-k6H"/>
+                <constraint firstAttribute="bottom" secondItem="bBw-ww-npK" secondAttribute="bottom" id="wtV-tO-3VA"/>
+            </constraints>
+            <size key="customSize" width="138" height="76"/>
+            <connections>
+                <outlet property="iv" destination="LFv-3n-J1L" id="LEx-c6-hah"/>
+                <outlet property="lb" destination="UU8-YS-Sxf" id="C0O-US-3hf"/>
+            </connections>
+            <point key="canvasLocation" x="353" y="245"/>
+        </collectionViewCell>
+    </objects>
+</document>

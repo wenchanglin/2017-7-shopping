@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ThemeTCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="栏目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuU-qF-IwV">
+                        <rect key="frame" x="10" y="13" width="28" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick1" translatesAutoresizingMaskIntoConstraints="NO" id="ZRB-W4-1sE">
+                        <rect key="frame" x="295" y="13" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="T6Q-cm-0IG"/>
+                            <constraint firstAttribute="height" constant="17" id="wqp-Oc-YMG"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XuU-qF-IwV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="k8p-Rl-Kfq"/>
+                    <constraint firstItem="ZRB-W4-1sE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kIe-Ad-Dw2"/>
+                    <constraint firstItem="XuU-qF-IwV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tmW-aK-jxC"/>
+                    <constraint firstAttribute="trailing" secondItem="ZRB-W4-1sE" secondAttribute="trailing" constant="8" id="zRQ-7f-JQf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iv" destination="ZRB-W4-1sE" id="dXZ-aw-SUz"/>
+                <outlet property="tLb" destination="XuU-qF-IwV" id="0PE-Hc-bl0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tick1" width="17" height="17"/>
+    </resources>
+</document>

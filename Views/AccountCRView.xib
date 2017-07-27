@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="AccountCRView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQR-1O-ocn">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="yR9-Ca-duJ">
+                            <rect key="frame" x="136" y="25" width="49" height="47"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="47" id="LCa-vF-Qux"/>
+                                <constraint firstAttribute="width" constant="49" id="R7d-AN-89v"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yws-Rk-cgs">
+                            <rect key="frame" x="143" y="108" width="45" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <color key="textColor" red="1" green="0.46942257430000001" blue="0.072103749240000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbS-7i-QZB">
+                            <rect key="frame" x="131" y="114" width="10" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="1" green="0.46942257430000001" blue="0.072103749240000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户余额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5f8-wq-6nd">
+                            <rect key="frame" x="128" y="80" width="64" height="20"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Yws-Rk-cgs" firstAttribute="top" secondItem="5f8-wq-6nd" secondAttribute="bottom" constant="8" id="5ag-ko-VtZ"/>
+                        <constraint firstItem="5f8-wq-6nd" firstAttribute="centerX" secondItem="nQR-1O-ocn" secondAttribute="centerX" id="Cft-4P-aa4"/>
+                        <constraint firstItem="5f8-wq-6nd" firstAttribute="top" secondItem="yR9-Ca-duJ" secondAttribute="bottom" constant="8" id="Hn7-ee-Q5l"/>
+                        <constraint firstItem="Yws-Rk-cgs" firstAttribute="leading" secondItem="sbS-7i-QZB" secondAttribute="trailing" constant="2" id="NBz-KY-tdy"/>
+                        <constraint firstItem="yR9-Ca-duJ" firstAttribute="centerX" secondItem="nQR-1O-ocn" secondAttribute="centerX" id="TeC-TP-l8N"/>
+                        <constraint firstItem="yR9-Ca-duJ" firstAttribute="top" secondItem="nQR-1O-ocn" secondAttribute="top" constant="25" id="cpw-Ea-GtJ"/>
+                        <constraint firstItem="Yws-Rk-cgs" firstAttribute="bottom" secondItem="sbS-7i-QZB" secondAttribute="bottom" constant="2" id="daj-aP-aFt"/>
+                        <constraint firstItem="Yws-Rk-cgs" firstAttribute="centerX" secondItem="nQR-1O-ocn" secondAttribute="centerX" constant="5" id="joZ-55-HID"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nQR-1O-ocn" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="80a-gN-T3D"/>
+                <constraint firstAttribute="bottom" secondItem="nQR-1O-ocn" secondAttribute="bottom" constant="5" id="CBo-JV-n1l"/>
+                <constraint firstItem="nQR-1O-ocn" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="cNa-1f-gx3"/>
+                <constraint firstAttribute="trailing" secondItem="nQR-1O-ocn" secondAttribute="trailing" id="rea-Te-mT8"/>
+            </constraints>
+            <connections>
+                <outlet property="balanceLb" destination="Yws-Rk-cgs" id="PJq-8D-HkY"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="268"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="account" width="49" height="47"/>
+    </resources>
+</document>

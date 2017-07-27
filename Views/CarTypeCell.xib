@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CarTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gs-Pu-uOe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdZ-PD-RJa">
+                                <rect key="frame" x="10" y="8" width="300" height="79"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tl_cellbg" translatesAutoresizingMaskIntoConstraints="NO" id="eul-z1-r57">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="79"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车厢尺寸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRt-aB-0ub">
+                                        <rect key="frame" x="8" y="31" width="56" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车辆载重" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeD-iJ-7MN">
+                                        <rect key="frame" x="8" y="51" width="56" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick1" translatesAutoresizingMaskIntoConstraints="NO" id="yAo-JC-ghi">
+                                        <rect key="frame" x="273" y="31" width="17" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="DVA-wW-Skj"/>
+                                            <constraint firstAttribute="width" constant="17" id="hKk-7g-6yv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="江淮JAC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sre-3d-0ve">
+                                        <rect key="frame" x="8" y="8" width="64" height="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.88361382479999995" green="0.46745598449999998" blue="0.1668054333" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eul-z1-r57" secondAttribute="trailing" id="7cD-ZI-OWL"/>
+                                    <constraint firstItem="QeD-iJ-7MN" firstAttribute="top" secondItem="yRt-aB-0ub" secondAttribute="bottom" constant="3" id="7tM-OJ-qgD"/>
+                                    <constraint firstItem="yRt-aB-0ub" firstAttribute="leading" secondItem="AdZ-PD-RJa" secondAttribute="leading" constant="8" id="9HP-7L-Iss"/>
+                                    <constraint firstItem="yAo-JC-ghi" firstAttribute="centerY" secondItem="AdZ-PD-RJa" secondAttribute="centerY" id="9y1-6T-MRb"/>
+                                    <constraint firstItem="QeD-iJ-7MN" firstAttribute="leading" secondItem="AdZ-PD-RJa" secondAttribute="leading" constant="8" id="De4-DZ-2ZG"/>
+                                    <constraint firstAttribute="trailing" secondItem="yAo-JC-ghi" secondAttribute="trailing" constant="10" id="L5B-S2-Y1s"/>
+                                    <constraint firstItem="sre-3d-0ve" firstAttribute="top" secondItem="AdZ-PD-RJa" secondAttribute="top" constant="8" id="gpl-Rh-W7J"/>
+                                    <constraint firstAttribute="bottom" secondItem="eul-z1-r57" secondAttribute="bottom" id="oBp-JP-oOH"/>
+                                    <constraint firstItem="yRt-aB-0ub" firstAttribute="top" secondItem="sre-3d-0ve" secondAttribute="bottom" constant="3" id="x3M-U1-xdi"/>
+                                    <constraint firstItem="eul-z1-r57" firstAttribute="top" secondItem="AdZ-PD-RJa" secondAttribute="top" id="xWJ-WI-Qzb"/>
+                                    <constraint firstItem="eul-z1-r57" firstAttribute="leading" secondItem="AdZ-PD-RJa" secondAttribute="leading" id="xdy-no-w3n"/>
+                                    <constraint firstItem="sre-3d-0ve" firstAttribute="leading" secondItem="AdZ-PD-RJa" secondAttribute="leading" constant="8" id="yhD-9D-NtL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AdZ-PD-RJa" firstAttribute="top" secondItem="5gs-Pu-uOe" secondAttribute="top" constant="8" id="7jE-yC-ywH"/>
+                            <constraint firstAttribute="bottom" secondItem="AdZ-PD-RJa" secondAttribute="bottom" id="C1u-Xc-Z5G"/>
+                            <constraint firstItem="AdZ-PD-RJa" firstAttribute="leading" secondItem="5gs-Pu-uOe" secondAttribute="leading" constant="10" id="p1i-Tk-wvx"/>
+                            <constraint firstAttribute="trailing" secondItem="AdZ-PD-RJa" secondAttribute="trailing" constant="10" id="v8t-1e-JqB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5gs-Pu-uOe" secondAttribute="trailing" id="Wzn-Jj-hEE"/>
+                    <constraint firstItem="5gs-Pu-uOe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aff-SV-ev1"/>
+                    <constraint firstAttribute="bottom" secondItem="5gs-Pu-uOe" secondAttribute="bottom" id="iSE-ce-NIy"/>
+                    <constraint firstItem="5gs-Pu-uOe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wRQ-Tk-fws"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bkIv" destination="eul-z1-r57" id="vwp-sc-bQ0"/>
+                <outlet property="bkView" destination="5gs-Pu-uOe" id="twc-eC-mnB"/>
+                <outlet property="markIv" destination="yAo-JC-ghi" id="KOS-BB-ne5"/>
+                <outlet property="nameLb" destination="sre-3d-0ve" id="8bH-yU-1yQ"/>
+                <outlet property="sbkView" destination="AdZ-PD-RJa" id="LKf-LO-iiT"/>
+                <outlet property="sizeLb" destination="yRt-aB-0ub" id="WuD-TO-XFM"/>
+                <outlet property="weightLb" destination="QeD-iJ-7MN" id="3rf-lU-cCZ"/>
+            </connections>
+            <point key="canvasLocation" x="46" y="250"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tick1" width="17" height="17"/>
+        <image name="tl_cellbg" width="355" height="112"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VideoCCell">
+            <rect key="frame" x="0.0" y="0.0" width="206" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="206" height="116"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taj-UU-02k">
+                        <rect key="frame" x="0.0" y="0.0" width="206" height="116"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fMk-ra-QFw">
+                                <rect key="frame" x="0.0" y="0.0" width="206" height="116"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDA-3P-YEn">
+                                <rect key="frame" x="5" y="3" width="26" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vM-og-wON" customClass="LYButton">
+                                <rect key="frame" x="184" y="94" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="0fa-WM-QXS"/>
+                                    <constraint firstAttribute="height" constant="22" id="a2M-2x-yiL"/>
+                                </constraints>
+                                <state key="normal" image="selet2"/>
+                                <state key="selected" image="selet1"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fMk-ra-QFw" secondAttribute="trailing" id="AHN-MZ-xvc"/>
+                            <constraint firstItem="fMk-ra-QFw" firstAttribute="top" secondItem="taj-UU-02k" secondAttribute="top" id="I6k-NF-S3Z"/>
+                            <constraint firstAttribute="bottom" secondItem="fMk-ra-QFw" secondAttribute="bottom" id="Rq9-VF-DTc"/>
+                            <constraint firstItem="fMk-ra-QFw" firstAttribute="leading" secondItem="taj-UU-02k" secondAttribute="leading" id="Xqv-r2-qfc"/>
+                            <constraint firstItem="MDA-3P-YEn" firstAttribute="top" secondItem="taj-UU-02k" secondAttribute="top" constant="3" id="ZZJ-og-8o4"/>
+                            <constraint firstItem="MDA-3P-YEn" firstAttribute="leading" secondItem="taj-UU-02k" secondAttribute="leading" constant="5" id="mBr-M5-7Os"/>
+                            <constraint firstAttribute="bottom" secondItem="9vM-og-wON" secondAttribute="bottom" id="vxT-5W-BEs"/>
+                            <constraint firstAttribute="trailing" secondItem="9vM-og-wON" secondAttribute="trailing" id="xr9-Fi-GvX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="taj-UU-02k" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Lif-PP-9z3"/>
+                <constraint firstAttribute="trailing" secondItem="taj-UU-02k" secondAttribute="trailing" id="Uuf-e7-TWZ"/>
+                <constraint firstItem="taj-UU-02k" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hib-BN-MP6"/>
+                <constraint firstAttribute="bottom" secondItem="taj-UU-02k" secondAttribute="bottom" id="wsB-61-ZKi"/>
+            </constraints>
+            <size key="customSize" width="206" height="116"/>
+            <connections>
+                <outlet property="bk" destination="taj-UU-02k" id="M4S-NA-yhq"/>
+                <outlet property="iv" destination="fMk-ra-QFw" id="xIe-mU-cwu"/>
+                <outlet property="selBt" destination="9vM-og-wON" id="nln-lx-z6j"/>
+                <outlet property="timeLb" destination="MDA-3P-YEn" id="Ejq-9f-shw"/>
+            </connections>
+            <point key="canvasLocation" x="176" y="139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="selet1" width="16" height="16"/>
+        <image name="selet2" width="16" height="16"/>
+    </resources>
+</document>

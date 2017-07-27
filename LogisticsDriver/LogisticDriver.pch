@@ -1,0 +1,71 @@
+//
+//  LogisticDriver.pch
+//  LogisticsDriver
+//
+//  Created by Blues on 17/1/22.
+//  Copyright © 2017年 wenchanglin. All rights reserved.
+//
+
+#ifndef LogisticDriver_pch
+#define LogisticDriver_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define kScreenSize [UIScreen mainScreen].bounds.size
+
+//是否为空或是[NSNull null]
+#define NotNilAndNull(_ref)  (((_ref) != nil) && (![(_ref) isEqual:[NSNull null]]))
+#define IsNilOrNull(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]))
+#define IsEmptyStr(_ref)     (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) || ([(_ref)isEqualToString:@""]))
+
+#define IOS8_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
+#define IOS7_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+
+#define  MainYellowColor    [UIColor colorWithRed:228/255.f green:91/255.f blue:0.0f alpha:1]
+#define  LGrayColor         [UIColor colorWithRed:0.91 green:0.91 blue:0.91 alpha:1]
+#define  MainColor          [UIColor colorWithRed:0.00 green:0.63 blue:0.71 alpha:1]
+#define  LineRedColor       [UIColor colorWithRed:1.00 green:0.37 blue:0.29 alpha:1]
+#define  LineIndigoColor    [UIColor colorWithRed:0.58 green:0.78 blue:0.27 alpha:1]
+#define  LineBrownColor     [UIColor colorWithRed:0.64 green:0.58 blue:0.45 alpha:1]
+#define  RandomColor        [UIColor colorWithRed:random()%255/255.f green:random()%255/255.f blue:random()%255/255.f alpha:1]
+
+
+#import "LYAPIManager.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import "DriverHeader.h"
+#import "WUtils.h"
+#import "LYButton.h"
+#import "LYHelper.h"
+#import <MJRefresh.h>
+#import <MBProgressHUD.h>
+#import "BaseViewController.h"
+#import "DisplayImagesVC.h"
+
+// JPush功能所需头文件
+#import "JPUSHService.h"
+//// iOS10 注册APNs所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
+
+//调试 代码的宏
+/*
+ 如果定义过宏DEBUG 那么 宏DDLog 表示NSLog函数 否则 表示空
+ 
+ DDLog(...) ...表示 变参宏
+ NSLog(__VA_ARGS__)  __VA_ARGS__ 表示接收宏中写的变参
+ 
+ DEBUG  宏  在 调试模式(Debug)下会定义
+ 在发布模式(Release)不会定义
+ */
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+
+
+#endif /* LogisticDriver_pch */

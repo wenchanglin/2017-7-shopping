@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="CVCReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXs-rB-NKQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="            " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QF4-Z3-zD1">
+                            <rect key="frame" x="10" y="16" width="46" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="QF4-Z3-zD1" firstAttribute="leading" secondItem="PXs-rB-NKQ" secondAttribute="leading" constant="10" id="hs1-QE-diY"/>
+                        <constraint firstItem="QF4-Z3-zD1" firstAttribute="centerY" secondItem="PXs-rB-NKQ" secondAttribute="centerY" id="o4F-OS-yHd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PXs-rB-NKQ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="7xp-JQ-J3l"/>
+                <constraint firstItem="PXs-rB-NKQ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="IzM-vG-b2g"/>
+                <constraint firstAttribute="bottom" secondItem="PXs-rB-NKQ" secondAttribute="bottom" constant="1" id="sxp-ov-kpR"/>
+                <constraint firstAttribute="trailing" secondItem="PXs-rB-NKQ" secondAttribute="trailing" id="tNz-wF-FNy"/>
+            </constraints>
+            <connections>
+                <outlet property="tLb" destination="QF4-Z3-zD1" id="BK0-Zh-pvR"/>
+            </connections>
+            <point key="canvasLocation" x="185" y="136"/>
+        </collectionReusableView>
+    </objects>
+</document>

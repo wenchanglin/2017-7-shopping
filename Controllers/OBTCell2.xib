@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OBTCell2">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dha-9o-QQ7">
+                        <rect key="frame" x="0.0" y="1" width="320" height="42"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的报价:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oy-aV-SaJ">
+                                <rect key="frame" x="10" y="13" width="61" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2v-LC-IR7">
+                                <rect key="frame" x="160" y="0.0" width="80" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="RcN-jW-Qzg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="取消订单" backgroundImage="bk33">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYM-zF-sZG">
+                                <rect key="frame" x="73" y="12" width="36" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.88361382479999995" green="0.46745598449999998" blue="0.1668054333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wb-IG-Ei3">
+                                <rect key="frame" x="240" y="0.0" width="80" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="T7v-jh-nbi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="支付保证金" backgroundImage="bk34">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1oy-aV-SaJ" firstAttribute="leading" secondItem="Dha-9o-QQ7" secondAttribute="leading" constant="10" id="1A6-xd-UVJ"/>
+                            <constraint firstItem="1oy-aV-SaJ" firstAttribute="centerY" secondItem="Dha-9o-QQ7" secondAttribute="centerY" id="83t-d5-jis"/>
+                            <constraint firstItem="2Wb-IG-Ei3" firstAttribute="top" secondItem="Dha-9o-QQ7" secondAttribute="top" id="B41-4N-3Rc"/>
+                            <constraint firstAttribute="bottom" secondItem="2Wb-IG-Ei3" secondAttribute="bottom" id="GK8-gP-yTh"/>
+                            <constraint firstItem="xYM-zF-sZG" firstAttribute="centerY" secondItem="Dha-9o-QQ7" secondAttribute="centerY" constant="1" id="UTD-mV-Ghh"/>
+                            <constraint firstAttribute="trailing" secondItem="2Wb-IG-Ei3" secondAttribute="trailing" id="VyE-Nh-yJx"/>
+                            <constraint firstAttribute="bottom" secondItem="b2v-LC-IR7" secondAttribute="bottom" id="YKA-DK-gwD"/>
+                            <constraint firstItem="b2v-LC-IR7" firstAttribute="top" secondItem="Dha-9o-QQ7" secondAttribute="top" id="ZrY-fM-KNm"/>
+                            <constraint firstItem="xYM-zF-sZG" firstAttribute="leading" secondItem="1oy-aV-SaJ" secondAttribute="trailing" constant="2" id="c77-uC-hFU"/>
+                            <constraint firstItem="2Wb-IG-Ei3" firstAttribute="leading" secondItem="b2v-LC-IR7" secondAttribute="trailing" id="yW7-2c-Vk2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="Dha-9o-QQ7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="0cS-WW-Ead"/>
+                    <constraint firstItem="Dha-9o-QQ7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HJY-ra-hfK"/>
+                    <constraint firstAttribute="bottom" secondItem="Dha-9o-QQ7" secondAttribute="bottom" id="R5Y-1s-4nI"/>
+                    <constraint firstAttribute="trailing" secondItem="Dha-9o-QQ7" secondAttribute="trailing" id="vit-e1-Czf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cancelBt" destination="b2v-LC-IR7" id="LKE-so-cSF"/>
+                <outlet property="deposit" destination="2Wb-IG-Ei3" id="4UL-TG-eVa"/>
+                <outlet property="myOffer" destination="xYM-zF-sZG" id="OjR-uH-0ty"/>
+            </connections>
+            <point key="canvasLocation" x="210" y="115"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bk33" width="100" height="45"/>
+        <image name="bk34" width="100" height="45"/>
+    </resources>
+</document>

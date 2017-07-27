@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BankListController">
+            <connections>
+                <outlet property="alpView" destination="4fM-Jc-i1V" id="NbZ-vH-nFs"/>
+                <outlet property="tableView" destination="ZJl-Cw-I8E" id="ItG-7v-pPu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL5-Nq-ZGC">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="disClicked:" destination="-1" eventType="touchUpInside" id="RmY-ta-oys"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fM-Jc-i1V">
+                    <rect key="frame" x="20" y="70" width="280" height="340"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDS-UV-ByJ">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxl-2d-hii">
+                                    <rect key="frame" x="105" y="12" width="70" height="17"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAl-II-5NR">
+                                    <rect key="frame" x="220" y="0.0" width="60" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="oFU-rr-fMr"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                    <state key="normal" title="✔︎">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="disClicked:" destination="-1" eventType="touchUpInside" id="8eA-os-A9W"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1Zg-eB-XoT"/>
+                                <constraint firstAttribute="bottom" secondItem="mAl-II-5NR" secondAttribute="bottom" id="I4b-U6-99b"/>
+                                <constraint firstItem="mAl-II-5NR" firstAttribute="top" secondItem="wDS-UV-ByJ" secondAttribute="top" id="Jci-Rs-7xv"/>
+                                <constraint firstAttribute="trailing" secondItem="mAl-II-5NR" secondAttribute="trailing" id="gcf-AU-yaP"/>
+                                <constraint firstItem="Nxl-2d-hii" firstAttribute="centerY" secondItem="wDS-UV-ByJ" secondAttribute="centerY" id="vis-FN-VbF"/>
+                                <constraint firstItem="Nxl-2d-hii" firstAttribute="centerX" secondItem="wDS-UV-ByJ" secondAttribute="centerX" id="zjs-8p-v8O"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZJl-Cw-I8E">
+                            <rect key="frame" x="0.0" y="40" width="280" height="300"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ZJl-Cw-I8E" firstAttribute="leading" secondItem="4fM-Jc-i1V" secondAttribute="leading" id="19J-Mf-b8y"/>
+                        <constraint firstItem="ZJl-Cw-I8E" firstAttribute="top" secondItem="wDS-UV-ByJ" secondAttribute="bottom" id="54U-34-CSe"/>
+                        <constraint firstAttribute="trailing" secondItem="ZJl-Cw-I8E" secondAttribute="trailing" id="6de-wM-FgJ"/>
+                        <constraint firstAttribute="trailing" secondItem="wDS-UV-ByJ" secondAttribute="trailing" id="Iec-Gb-RXH"/>
+                        <constraint firstAttribute="bottom" secondItem="ZJl-Cw-I8E" secondAttribute="bottom" id="jg6-Eu-Iyl"/>
+                        <constraint firstItem="wDS-UV-ByJ" firstAttribute="leading" secondItem="4fM-Jc-i1V" secondAttribute="leading" id="tIb-3s-2oM"/>
+                        <constraint firstItem="wDS-UV-ByJ" firstAttribute="top" secondItem="4fM-Jc-i1V" secondAttribute="top" id="uE5-qA-ftG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="kL5-Nq-ZGC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4i0-c2-WCh"/>
+                <constraint firstAttribute="trailing" secondItem="4fM-Jc-i1V" secondAttribute="trailing" constant="20" id="D2D-9N-QGT"/>
+                <constraint firstAttribute="trailing" secondItem="kL5-Nq-ZGC" secondAttribute="trailing" id="GhT-Ib-yrb"/>
+                <constraint firstItem="4fM-Jc-i1V" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="MIf-Xs-ihb"/>
+                <constraint firstItem="kL5-Nq-ZGC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NT1-pb-9Ai"/>
+                <constraint firstItem="4fM-Jc-i1V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Rca-bc-nM0"/>
+                <constraint firstAttribute="bottom" secondItem="kL5-Nq-ZGC" secondAttribute="bottom" id="Uy1-Uv-81B"/>
+                <constraint firstAttribute="bottom" secondItem="4fM-Jc-i1V" secondAttribute="bottom" constant="70" id="j0l-sz-ddp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="472" y="280"/>
+        </view>
+    </objects>
+</document>
